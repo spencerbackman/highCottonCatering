@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>High Cotton Catering</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i|Lora:400,400i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i|Neuton:200,300,400,400i,700|Open+Sans:300,300i,400,400i,600,600i|Playfair+Display|Yeseva+One" rel="stylesheet">
+
+</head>
+<body>
+<div class="body-wrapper">
+
+    <nav class="navbar">
+        <a onclick="{document.getElementById('home').scrollIntoView(true)}">
+            <img class="cottonBrand" src="images/highCotton2.png" alt="">
+        </a>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a onclick="{document.getElementById('about').scrollIntoView(true)}" class="nav-links" >ABOUT</a>
+            </li>
+            <li>
+                <a onclick="{document.getElementById('wedding').scrollIntoView(true)}" class="nav-links" >WEDDINGS</a>
+            </li>
+            <li>
+                <a onclick="{document.getElementById('event').scrollIntoView(true)}" class="nav-links" >EVENTS</a>
+            </li>
+            <li>
+                <a onclick="{document.getElementById('menu').scrollIntoView(true)}" class="nav-links">MENUS</a>
+            </li>
+            <li>
+                <a onclick="{document.getElementById('contact').scrollIntoView(true)}" class="nav-links" >CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="home"></div>
+    <div class="homeMain">
+        <h2 class="headerTop">HIGH COTTON CATERING</h1>
+    </div>
+    <div id="about"></div>
+    <div class="aboutContainer">
+        <p class="aboutPar">High Cotton Catering is a state-wide, on-site catering service based out of Grenada, Ms. Our mission is to provide events with high quality food and service. We work with a personable and efficient way, not drawing attention to ourselves but focusing on the vision of our clients. </p>
+    </div>
+    <div class="vidContainer">
+        <iframe class="video" src="https://player.vimeo.com/video/221498332" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  
+    <div id="wedding"></div>
+    <div class="weddingWrapper">
+      <div class="weddingContent">
+        <h2 class="boxHeader">WEDDINGS</h2>
+        <p class="boxPar"> We work closely with you to help make your special day a reflection of you, perfect.   </p>
+      </div>
+    </div>
+
+    <div id="event"></div>
+    <div class="eventWrapper">
+        <div class="eventBox">
+            <h2 class="boxHeader">EVENTS</h2>
+            <p class="boxPar"> From corporate to social events, we strive to elevate every event and bring your vision to life. </p>
+        </div>
+    </div>
+
+    <div id="menu"></div>
+    <h2 class="sampleHeader">Sample Menus</h2>
+    <div class="menuWrapper">
+        <div class="menuContainer">
+            <h3 class="menuHeader"> Sample Menu 1</h3>
+            <p class="menuItem"> <strong>Appetizer:</strong>  &nbsp; &nbsp;&nbsp;&nbsp; Baked Potatoe </p>
+            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Steak </p>
+            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Cheesecake </p>
+            <p class="menuPrice"> $40 Per Person </p>
+        </div>
+        <div class="menuContainer">
+            <h3 class="menuHeader"> Sample Menu 2</h3>
+            <p class="menuItem"> <strong>Appetizer:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Salad and Basket of Bread  </p>
+            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Salmon </p>
+            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Apple Pie </p>
+            <p class="menuPrice"> $50 Per Person </p>
+        </div>
+        <div class="menuContainer">
+            <h3 class="menuHeader"> Sample Menu 3 </h3>
+            <p class="menuItem"> <strong>Appetizer:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Marinated Mozzarella, Cherry Tomato, & Basil Salad </p>
+            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Caprese Gnocchi w/ mozzarella, basil, & roasted tomato </p>
+            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; White chocolate molten lava cake </p>
+            <p class="menuPrice"> $60 Per Person </p>
+        </div>
+        <div class="menuContainer">
+            <h3 class="menuHeader"> Sample Menu 4 </h3>
+            <p class="menuItem"> <strong>Appetizer:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Chorizo & Smoked Gouda Fritter </p>
+            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; French Onion Soup </p>
+            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Creme brule </p>
+            <p class="menuPrice"> $60 Per Person </p>
+        </div>
+    </div>
+
+    <div id="contact"></div>
+    <div id="contactWrapper">
+        <h2 class="contactHeader"> Email Us </h2>
+        <p class="contactSubHeader"> Feel free to email us using the form below. </p>
+        <form id="formContainer" action="https://formspree.io/highcottoncatering@highcottoncatering.com" method="POST">
+            <div class="row">
+                <div class="column">
+                    <label for="form_name" class="form_label"><i class="far fa-user"></i></label>
+                    <input type="text" name="name" class="input" placeholder="NAME"/>
+                </div>
+                <div class="column">
+                    <label for="form_email" class="form_label"><i class="far fa-envelope"></i></label>
+                    <input type="text" name="email" class="input" placeholder="EMAIL"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="form_date" class="form_label"><i class="far fa-calendar"></i></label>
+                    <input type="date" class="date" placeholder="EVENT DATE">
+                </div>
+                <div class="column">
+                    <label for="form_number" class="form_label"><i class="fas fa-phone"></i></label>
+                    <input type="number" class="input" placeholder="PHONE NUMBER">
+                </div>
+            </div>
+            <div class="message_row">
+                <label for="form_message" class="form_label"><i class="far fa-comment-alt"></i></label>
+                <input type="text" class="message_input" placeholder="MESSAGE">
+            </div>
+            <div class="row">
+                <button id="form-button"><i class="far fa-paper-plane"></i> SEND </button>
+            </div>
+        </form>
+    </div>
+    <div id="footerWrapper">
+        <footer class="footer">
+            <a class="icon" href="tel:6621234567"><i class="fas fa-phone fa-lg"></i><p class="footerText">(662)123-4567</p></a>
+            <a class="icon" href="tel:"><i class="far fa-envelope fa-lg"></i> <p class="footerText"> highcotton@catering.com </p></a>
+            <a class="icon" href="https://www.facebook.com/highcottoncatering/"><i class="fab fa-facebook-square fa-lg"></i></a>
+        </footer>
+    </div>
+
+
+  <script type="text/javascript" src="nav.js"></script>
+</div>
+</body>
+</html>
