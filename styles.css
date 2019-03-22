@@ -5,7 +5,14 @@ body {
     padding: 0;
     background: #F9F9F9;
     overflow-x: hidden;
+}
 
+.body-wrapper {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    overflow-x: hidden;
 }
 
 .nav li a {
@@ -350,4 +357,86 @@ input:focus {
 
 .fa-facebook-square {
     color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeMain {
+        height: 300px;
+        padding-top: 50px;
+        background-attachment: scroll;
+        background-size: auto 100vw;
+    }
+
+    .video {
+        width: 100vw;
+        height: auto;
+        min-height: auto;
+        min-width: auto;
+    }
+    .weddingWrapper {
+        background-position: center center;
+    }
+    .weddingContent {
+        top: 0px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .eventBox {
+        top: 0px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .headerTop {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row {
+        flex-flow: column;
+    }
+    .column {
+        width: 90%;
+    }
+    .footerWrapper {
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    .icon {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .fa-facebook-square {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .fa-phone {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .fa-envelope {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .footerText {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
