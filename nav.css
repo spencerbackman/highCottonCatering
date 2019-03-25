@@ -52,7 +52,7 @@
     color: #f80505;
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 830px){
     .navbar {
         display: flex;
         justify-content: space-between;

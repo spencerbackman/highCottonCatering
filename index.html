@@ -9,16 +9,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-
-<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i|Lora:400,400i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i|Neuton:200,300,400,400i,700|Open+Sans:300,300i,400,400i,600,600i|Playfair+Display|Yeseva+One" rel="stylesheet">
-
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg" />
+<link href="https://fonts.googleapis.com/css?family=Arvo:400i|Open+Sans:300" rel="stylesheet">
 </head>
 <body>
 <div class="body-wrapper">
 
     <nav class="navbar">
-        <a onclick="{document.getElementById('home').scrollIntoView(true)}">
+        <a onclick="{document.getElementById('home').scrollIntoView({ behavior: 'smooth', block: 'start' })}">
             <img class="cottonBrand" src="images/highCotton2.png" alt="">
         </a>
         <span class="navbar-toggle" id="js-navbar-toggle">
@@ -26,19 +24,22 @@
         </span>
         <ul class="main-nav" id="js-menu">
             <li>
-                <a onclick="{document.getElementById('about').scrollIntoView(true)}" class="nav-links" >ABOUT</a>
+                <a onclick="{document.getElementById('home').scrollIntoView({ behavior: 'smooth', block: 'start' })}" class="nav-links">HOME</a>
             </li>
             <li>
-                <a onclick="{document.getElementById('wedding').scrollIntoView(true)}" class="nav-links" >WEDDINGS</a>
+                <a onclick="{document.getElementById('about-anchor').scrollIntoView({ behavior: 'smooth', block: 'start' })}" class="nav-links" >ABOUT</a>
             </li>
             <li>
-                <a onclick="{document.getElementById('event').scrollIntoView(true)}" class="nav-links" >EVENTS</a>
+                <a onclick="{document.getElementById('wedding').scrollIntoView({ behavior: 'smooth', block: 'start'})}" class="nav-links" >WEDDINGS</a>
             </li>
             <li>
-                <a onclick="{document.getElementById('menu').scrollIntoView(true)}" class="nav-links">MENUS</a>
+                <a onclick="{document.getElementById('event').scrollIntoView({ behavior: 'smooth', block: 'start'})}" class="nav-links" >EVENTS</a>
             </li>
             <li>
-                <a onclick="{document.getElementById('contact').scrollIntoView(true)}" class="nav-links" >CONTACT</a>
+                <a onclick="{document.getElementById('menu-anchor').scrollIntoView({ behavior: 'smooth', block: 'start'})}" class="nav-links">MENUS</a>
+            </li>
+            <li>
+                <a onclick="{document.getElementById('contact-anchor').scrollIntoView({ behavior: 'smooth', block: 'start'})}" class="nav-links" >CONTACT</a>
             </li>
         </ul>
     </nav>
@@ -47,7 +48,7 @@
     <div class="homeMain">
         <h2 class="headerTop">HIGH COTTON CATERING</h1>
     </div>
-    <div id="about"></div>
+    <div id="about"><div id="about-anchor"></div></div>
     <div class="aboutContainer">
         <p class="aboutPar">High Cotton Catering is a state-wide, on-site catering service based out of Grenada, Ms. Our mission is to provide events with high quality food and service. We work with a personable and efficient way, not drawing attention to ourselves but focusing on the vision of our clients. </p>
     </div>
@@ -71,42 +72,78 @@
         </div>
     </div>
 
-    <div id="menu"></div>
+    <div id="menu"><div id="menu-anchor"></div></div>
     <h2 class="sampleHeader">Sample Menus</h2>
     <div class="menuWrapper">
         <div class="menuContainer">
-            <h3 class="menuHeader"> Sample Menu 1</h3>
-            <p class="menuItem"> <strong>Appetizer:</strong>  &nbsp; &nbsp;&nbsp;&nbsp; Baked Potatoe </p>
-            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Steak </p>
-            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Cheesecake </p>
+            <h3 class="menuHeader"> Menu 1</h3>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Appetizer: </h4>
+                <p class="menuItem"> Baked Potatoe W/ Cheese, Sour Cream &  </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Main Course: </h4>
+                <p class="menuItem"> Filet Mignon Lightly Seasoned And Grilled To Order </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Dessert: </h4>
+                <p class="menuItem"> Cheesecake W/ Graham Cracker Crust & Sour Cream Topping </p>
+            </div>
             <p class="menuPrice"> $40 Per Person </p>
         </div>
         <div class="menuContainer">
-            <h3 class="menuHeader"> Sample Menu 2</h3>
-            <p class="menuItem"> <strong>Appetizer:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Salad and Basket of Bread  </p>
-            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Salmon </p>
-            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Apple Pie </p>
+            <h3 class="menuHeader"> Menu 2</h3>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Appetizer: </h4>
+                <p class="menuItem"> Greek Salad & Bread Basket </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Main Course: </h4>
+                <p class="menuItem"> Grilled Salmon & Cheesey Grits </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Dessert: </h4>
+                <p class="menuItem"> Apple Pie & Vanilla Ice Cream </p>
+            </div>
             <p class="menuPrice"> $50 Per Person </p>
         </div>
         <div class="menuContainer">
-            <h3 class="menuHeader"> Sample Menu 3 </h3>
-            <p class="menuItem"> <strong>Appetizer:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Marinated Mozzarella, Cherry Tomato, & Basil Salad </p>
-            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Caprese Gnocchi w/ mozzarella, basil, & roasted tomato </p>
-            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; White chocolate molten lava cake </p>
+            <h3 class="menuHeader"> Menu 3 </h3>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Appetizer: </h4>
+                <p class="menuItem"> Marinated Mozzarella, Cherry Tomato, & Basil Salad </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Main Course: </h4>
+                <p class="menuItem"> Caprese Gnocchi W/ Mozzarella, Basil & Roasted Tomato </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Dessert: </h4>
+                <p class="menuItem"> White Chocolate Molten Lava Cake </p>
+            </div>
             <p class="menuPrice"> $60 Per Person </p>
         </div>
         <div class="menuContainer">
-            <h3 class="menuHeader"> Sample Menu 4 </h3>
-            <p class="menuItem"> <strong>Appetizer:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Chorizo & Smoked Gouda Fritter </p>
-            <p class="menuItem"> <strong>Main Course:</strong> &nbsp;&nbsp;&nbsp;&nbsp; French Onion Soup </p>
-            <p class="menuItem"> <strong>Dessert:</strong> &nbsp;&nbsp;&nbsp;&nbsp; Creme brule </p>
+            <h3 class="menuHeader"> Menu 4 </h3>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Appetizer: </h4>
+                <p class="menuItem"> Chorizo & Smoked Gouda Fritter </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Main Course: </h4>
+                <p class="menuItem"> French Onion Soup </p>
+            </div>
+            <div class="menuRow">
+                <h4 class="menuCourse"> Dessert: </h4>
+                <p class="menuItem"> Creme Brule & Vanilla Icecream </p>
+            </div>
             <p class="menuPrice"> $60 Per Person </p>
         </div>
     </div>
 
-    <div id="contact"></div>
+    <div id="contact"><div id="contact-anchor"></div></div>
     <div id="contactWrapper">
-        <h2 class="contactHeader"> Email Us </h2>
+        <h2 class="contactHeader"> Contact Us </h2>
         <p class="contactSubHeader"> Feel free to email us using the form below. </p>
         <form id="formContainer" action="https://formspree.io/highcottoncatering@highcottoncatering.com" method="POST">
             <div class="row">
