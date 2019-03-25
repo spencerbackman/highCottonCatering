@@ -23,7 +23,7 @@ body {
 }
 
 .homeMain {
-    background: url(images/food.jpg);
+    background: url(images/food.png);
     background-size: cover;
     background-attachment: fixed;
     height: 105vh;
@@ -120,7 +120,7 @@ body {
 .weddingWrapper {
     height: 110vh;
     width: 100%;
-    background: url(images/weddingCatering.jpg);
+    background: url(images/weddingCatering.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -155,7 +155,7 @@ body {
 
 
 .eventWrapper {
-    background: url(images/corporateCatering.jpg);
+    background: url(images/corporateCatering.png);
     background-size: cover;
     width: 90vw;
     height: 100vh;
